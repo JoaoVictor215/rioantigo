@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa na Página (Simulação)</title>
+    <style>
+        /* Estilos do campo de pesquisa */
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        /* Estilos para o texto destacado */
+        .highlight {
+            background-color: yellow;
+        }
+        /* Estilo para os parágrafos */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Pesquisa na Página</h1>
+    <p>Digite um termo no campo de pesquisa abaixo para destacar as palavras na página.</p>
+
+    <!-- Caixa de pesquisa -->
+    <div class="search-container">
+        <label for="searchInput">Pesquisar:</label>
+        <input type="text" id="searchInput" placeholder="Digite um termo...">
+    </div>
+
+    <p>Aqui está um exemplo de uma página com conteúdo que pode ser pesquisado.</p>
+    <p>Se você pesquisar por palavras como "exemplo", "pesquisa", ou "página", elas serão destacadas.</p>
+    <p>Este conteúdo é estático, mas demonstra como o processo de busca pode funcionar.</p>
+
+    <script>
+        // Script simples para destacar palavras manualmente
+        document.getElementById('searchInput').addEventListener('input', function() {
+            let searchTerm = this.value.toLowerCase();
+            let paragraphs = document.querySelectorAll('p');
+            
+            paragraphs.forEach(paragraph => {
+                // Remover destaque anterior
+                paragraph.innerHTML = paragraph.textContent;
+
+                if (searchTerm) {
+                    let regex = new RegExp(searchTerm, 'gi');
+                    paragraph.innerHTML = paragraph.textContent.replace(regex, match => {
+                        return `<span class="highlight">${match}</span>`;
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
