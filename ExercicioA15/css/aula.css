@@ -46,21 +46,10 @@
     border-bottom: 1px solid rgb(224,134,30);
 }
 
-.conteudo-primcipal {
+.conteudo-principal {
     width: 940px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .titulo-principal {
     font-family: Arial, Helvetica, sans-serif, cursive;
@@ -93,3 +82,59 @@
     padding: 5px 0 5px 0;
     text-align: justify;
 }
+
+.sobre-rio-antigo{ 
+    margin: 20px 0 30px 0;
+    padding: 10px 0;
+    box-sizing: content-box;
+}
+
+.sobre-rio-antigo h3 {
+    padding: 10px 0;
+    font-family: monospace;
+    font-size: 20px;
+    color: brown;
+}
+
+.conteudo-rio-antigo-cabecalho {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+}
+
+.conteudo-rio-antigo {
+    border: 1px solid blue;
+    border-radius: 2%;
+    width: 95%;
+
+}
+.conteudo-rio-antigo:hover {
+    border: 4px solid violet;
+}
+
+.conteudo-rio-antigo h3, .conteudo-rio-antigo p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.conteudo-rio-antigo h3 {
+    color: brown;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.conteudo-rio-antigo p {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.conteudo-rio-antigo-img {
+    align-content: center;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.conteudo-rio-antigo-img img {
+    width: 270px;
+}
+
