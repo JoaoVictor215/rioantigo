@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/aula.css" rel="stylesheet"> 
+    <link href="css/contato.css" rel="stylesheet">
+    <link href="img/python_16.png" rel="shortcut icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Contato</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="caixa">
+            <h1 class="logo">
+                <img src="img/rioicon_125x125.png" alt="logo do site">
+            </h1>
+            <nav class="hmenu">
+                <ul>
+                    <li><a href="app.html">Home</a></li>           
+                    <li><a href="fotos.html">Fotos</a></li>  
+                    <li><a href="contato.html">Contato</a></li>  
+                    <li><a href="sobre.html">Sobre</a></li>  
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo-principal">
+        <div class="titulo-principal">
+            <h2>Converse conosco</h2>
+        </div>
+        <div class="divform">
+            <form name="frmContato" id="idContato" action="" method="POST">
+                <fieldset>  
+
+                <div class="label">
+                    <label for="idNome">Nome:</label>
+                </div>
+            
+                <input id="idNome" type="text" name="nome" maxlength="70" placeholder="Digite seu nome" required>
+
+                <div class="label">
+                    <label for="idEmail">E-mail:</label>
+                </div>
+
+                <input id="idEmail" type="email" name="email" maxlength="100" placeholder="Digite seu email" required>
+
+                <div class="label">
+                    <label for="idTelefone">Telefone:</label>
+                </div>
+
+                <input id="idTelefone" type="tel" name="telefone" placeholder="Digite seu telefone" required>
+
+                <div>
+                    <label>Gênero:</label>
+                </div>
+                    <input type="radio" name="generoe" value="F" id="idGeneroF"><label for="idGeneroF">Feminino</label>
+                    <input type="radio" name="generoe" value="M" id="idGeneroM"><label for="idGeneroM">Masculino</label>
+                    <input type="radio" name="generoe" value="O" id="idGeneroO"><label for="idGeneroO">Outros</label>
+
+                <div class="label">
+                    <label id="idAssunto">Assunto:</label>
+                </div>
+                    <select name="assunto" id="idAssunto">
+                        <option value="0">Selecione...</option>
+                        <option value="E">Elogio</option>
+                        <option value="C">Critica</option>
+                        <option value="S">Solicitação</option>
+                        <option value="O">Outros</option>
+                    </select>
+
+                <div class="label">
+                    <label id="idMensagem">Mensagem:</label>
+                </div>
+                <textarea class="minhaTextArea" row="10" cols="200" id="idMensagem" name="mensagem" placeholder="Preencha com a mensagem desejada"></textarea>
+                <div class="botoes">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>   
+            </form>
+        </div> 
+    </main>
+
+    <footer class="rodape">
+        <div>
+            <h3>Senac</h3>
+        </div>
+        <div>
+            <h4>Fontes</h4>
+            <ul>
+                <li>E-mail: sobre@rj.senac.br</li>
+                <li>Contato: Alunos e Professor do Senac </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
